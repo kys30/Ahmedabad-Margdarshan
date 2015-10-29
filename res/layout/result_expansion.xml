@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlResult1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_style">
+    
+     <TextView
+        android:id="@+id/tvAMD"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ahmedabad Marg Darshan"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#ff6"
+        android:textStyle="bold"></TextView>
+
+<RelativeLayout
+    android:id="@+id/rlResultExpansion"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/tvAMD" >
+
+    <TextView
+        android:id="@+id/tvSource"
+        android:text="Source :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+
+       <TextView
+        android:id="@+id/tvSourceValue"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvSource"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:textColor="#ffffcc"
+         />
+
+    <TextView
+        android:id="@+id/tvDestination"
+        android:text="Destination :"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSource"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:textSize="16dp" />
+       
+    <TextView
+        android:id="@+id/tvDestinationValue"
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvDestination"
+        android:layout_below="@id/tvSourceValue"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:textColor="#ffffcc"
+         />
+
+</RelativeLayout>
+
+<ListView 
+    android:id="@+id/lvBusNo"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:drawSelectorOnTop="false"
+    android:layout_below="@id/rlResultExpansion"
+    android:background="#33000000"
+    android:divider="#ff6"
+    android:dividerHeight="1dp"
+    ></ListView>
+            
+</RelativeLayout>

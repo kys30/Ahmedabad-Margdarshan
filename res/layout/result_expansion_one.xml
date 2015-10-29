@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_style" >
+    
+    <TextView
+        android:id="@+id/tvRouteInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="#ff6"
+        android:textSize="18dp"
+        ></TextView>
+    
+    <ListView 
+        android:id="@+id/lvHops"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        android:background="#33000000"
+        android:divider="#ff6"
+        android:dividerHeight="1dp"
+        ></ListView>
+
+</LinearLayout>

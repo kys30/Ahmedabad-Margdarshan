@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:padding="0dp"
+    android:background="@drawable/background_style">
+
+    <TextView
+        android:id="@+id/tvAMD"
+        android:layout_alignTop="@id/rlMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ahmedabad Marg Darshan"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#ff6"
+        android:textStyle="bold"
+        
+        ></TextView>
+    <RelativeLayout 
+        android:id="@+id/rlSource"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAMD"
+        android:background="#22000000"
+        android:padding="10dp"
+        >    
+        <TextView
+        android:id="@+id/tvSource"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Source :"
+        android:textSize="16dp"
+       >
+    </TextView>
+    <AutoCompleteTextView
+               android:id="@+id/acSelection1"
+               android:layout_margin="5dp"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/tvSource"
+               android:gravity="left"
+               android:height="50dp"
+               />
+     
+      <TextView
+          android:id="@+id/tvDestination"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_margin="5dp"
+          android:layout_below="@id/acSelection1"
+          android:text="Destination :"
+          android:textSize="16dp"
+          android:textColor="#fff" >
+
+     </TextView>
+     <AutoCompleteTextView 
+               android:id="@+id/acSelection2"
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/tvDestination"
+               android:gravity="left"
+               android:height="50dp"
+               />
+                
+       <Button
+          android:id="@+id/bGo"
+          style="@style/ButtonText"
+          android:layout_marginTop="10dp"
+          android:layout_alignRight="@+id/tvDestination"
+          android:layout_below="@+id/acSelection2"
+          android:background="@drawable/button_style"
+          android:text="Go!" />
+           
+      
+           
+           
+      </RelativeLayout>
+      
+    
+
+</RelativeLayout>

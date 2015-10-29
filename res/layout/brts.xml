@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_style">
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Janmarg BRTS Routes"
+        android:textSize="22dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#ff6"
+        android:textStyle="bold"></TextView>
+    
+    <TextView 
+        android:id="@+id/tvSelect"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Select the Route No. you want to know about"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"        
+        />
+    <Spinner
+        android:id="@+id/spinner_routes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+     />
+    <ListView
+        android:id="@+id/lvBRTS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="false"
+        
+        android:divider="#ff6"
+        android:dividerHeight="1dp"
+        android:background="@drawable/list_background"
+        />
+
+    
+
+</LinearLayout>

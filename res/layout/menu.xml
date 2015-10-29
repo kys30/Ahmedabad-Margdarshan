@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   s   
+    <item android:id="@+id/menu_routes"
+        android:icon="@drawable/icon_route"
+          android:title="Bus Routes" />
+ 
+    <item android:id="@+id/menu_stops"
+          android:icon="@drawable/icon_stops"
+          android:title="Bus Stops" />
+ 
+    <item android:id="@+id/menu_brts"
+        android:icon="@drawable/icon_brts"
+          android:title="BRTS" />
+ 
+    <item android:id="@+id/menu_map"
+        android:icon="@drawable/icon_citymap"
+          android:title="City Map" />
+ 
+    <item android:id="@+id/menu_gps"
+        android:icon="@drawable/icon_gps"
+          android:title="Locate Me!" /> 
+ 
+    <item android:id="@+id/menu_brts_map"
+        android:icon="@drawable/icon_brtsmap"
+          android:title="BRTS Map" />
+</menu>
